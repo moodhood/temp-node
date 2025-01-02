@@ -12,8 +12,15 @@
 // npm will create a folder for all the dependencies called node_modules after importing a package
 // the package.json file is very important because the dependencies property
 
+// npm i nodemon -D or --save-dev it will save it as a devdependency 
+// devdependencies are used for testing and creating stuff, but it is not used for the actual thing
+
+// npm start or npm run dev will start the application (look at package.json ad scripts)
+
+
 const _ = require('lodash')
 
 const items = [1, [2, [3, [4, [5]]]]]
 const newItems = _.flattenDeep(items)
 console.log(newItems)
+
